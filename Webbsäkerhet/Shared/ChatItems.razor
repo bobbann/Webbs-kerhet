@@ -1,16 +1,21 @@
 ﻿@using Webbsäkerhet.Classes
 
-
 @if (items != null)
 {
-<ul class="list-group">
-    @foreach (var item in items)
-    {
-<ChatItem Item=item />}
-</ul>}
-            else
-            {
+    <ul class="list-group">
+        @foreach (var item in items)
+        {
+            <ChatItem Item=item />
+        }
+    </ul>
+}
+else
+{
 
-            }
+}
 
-@code { private List<Chat> items = new List<Chat>(); }
+@code {
+    private List<Chat> items = new List<Chat>();
+
+ 
+}
